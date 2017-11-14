@@ -16,6 +16,8 @@ public class MainActivity extends AppCompatActivity {
     EditText tlfn;
     private MainActivityEvents Events;
     DataHolder dataholder;
+    Main2Activity main2Activity;
+    Main2ActivityEvents main2ActivityEvents;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,7 +25,6 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         Events=new MainActivityEvents(this);
         dataholder=new DataHolder();
-
 
         btnEdit=(Button)this.findViewById(R.id.btnEdit);
         btnEdit.setOnClickListener(Events);
@@ -44,5 +45,9 @@ public class MainActivity extends AppCompatActivity {
         direc.setEnabled(false);
         tlfn.setEnabled(false);
 
+        name.setText(dataholder.instance.name);
+        mail.setText(dataholder.instance.mail);
+        direc.setText(dataholder.instance.direccion);
+        tlfn.setText(dataholder.instance.tlfn);
     }
 }
