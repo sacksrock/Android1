@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Actividad1Android</string>
+    <string-array name="cuerpo_array">
+        <item>Guardia Civil</item>
+        <item>Policia Nacional</item>
+        <item>Policia Local</item>
+        <item>Ejercito</item>
+    </string-array>
+</resources>

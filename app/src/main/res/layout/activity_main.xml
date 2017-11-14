@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.danieliglesia.actividad1android.MainActivity">
+
+    <ScrollView
+        android:layout_width="368dp"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="16dp">
+        <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context="com.example.danieliglesia.actividad1android.MainActivity">
+
+
+            <Button
+                android:id="@+id/btnSave"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Guardar"
+                android:layout_marginLeft="78dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toLeftOf="@+id/btnVolver"
+                android:layout_marginRight="12dp"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginTop="16dp"
+                app:layout_constraintHorizontal_bias="0.0"
+                android:layout_marginBottom="12dp"
+                app:layout_constraintBottom_toTopOf="@+id/txtName"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <DatePicker
+                android:id="@+id/datePicker2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="-121dp"
+                android:layout_marginTop="-595dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtCal"
+                android:layout_marginRight="12dp"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintHorizontal_bias="0.656" />
+
+            <TextView
+                android:id="@+id/txtCal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fecha Inscripción"
+                android:layout_marginTop="19dp"
+                app:layout_constraintTop_toBottomOf="@+id/txtDir"
+                android:layout_marginLeft="28dp"
+                app:layout_constraintLeft_toLeftOf="parent" />
+
+            <EditText
+                android:id="@+id/direc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:layout_marginTop="0dp"
+                app:layout_constraintTop_toBottomOf="@+id/tlfn"
+                android:layout_marginRight="16dp"
+                app:layout_constraintRight_toRightOf="parent" />
+
+            <TextView
+                android:id="@+id/txtDir"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dirección"
+                android:layout_marginTop="30dp"
+                app:layout_constraintTop_toBottomOf="@+id/txtTlfn"
+                android:layout_marginLeft="12dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toLeftOf="@+id/direc"
+                android:layout_marginRight="12dp"
+                app:layout_constraintHorizontal_bias="0.327" />
+
+            <EditText
+                android:id="@+id/tlfn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:layout_marginRight="16dp"
+                app:layout_constraintRight_toRightOf="parent"
+                android:layout_marginTop="0dp"
+                app:layout_constraintTop_toBottomOf="@+id/mail" />
+
+            <TextView
+                android:id="@+id/txtTlfn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Teléfono"
+                android:layout_marginTop="24dp"
+                app:layout_constraintTop_toBottomOf="@+id/txtEmail"
+                app:layout_constraintRight_toLeftOf="@+id/tlfn"
+                android:layout_marginRight="36dp"
+                android:layout_marginLeft="12dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintHorizontal_bias="0.484" />
+
+            <EditText
+                android:id="@+id/mail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="16dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                app:layout_constraintRight_toRightOf="parent"
+                android:layout_marginTop="12dp"
+                app:layout_constraintTop_toBottomOf="@+id/name" />
+
+            <TextView
+                android:id="@+id/txtEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="58dp"
+                android:layout_marginTop="18dp"
+                android:text="Email"
+                app:layout_constraintRight_toLeftOf="@+id/mail"
+                app:layout_constraintTop_toBottomOf="@+id/imageView"
+                android:layout_marginLeft="12dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintHorizontal_bias="0.545" />
+
+            <EditText
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="61dp"
+                android:layout_marginTop="13dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="Name"
+                app:layout_constraintHorizontal_bias="0.196"
+                app:layout_constraintLeft_toRightOf="@+id/txtName"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btnEdit" />
+
+            <TextView
+                android:id="@+id/txtName"
+                android:layout_width="57dp"
+                android:layout_height="17dp"
+                android:text="Nombre"
+                app:layout_constraintLeft_toRightOf="@+id/imageView"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="85dp"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginBottom="12dp"
+                app:layout_constraintBottom_toTopOf="@+id/txtCal"
+                app:layout_constraintVertical_bias="0.0"
+                tools:layout_editor_absoluteY="87dp" />
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="70dp"
+                android:layout_height="63dp"
+                app:srcCompat="@mipmap/ic_launcher"
+                android:layout_marginLeft="8dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:layout_marginTop="0dp"
+                app:layout_constraintTop_toBottomOf="@+id/btnVolver" />
+
+            <Button
+                android:id="@+id/btnVolver"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Volver"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="173dp"
+                app:layout_constraintLeft_toLeftOf="parent" />
+
+            <Button
+                android:id="@+id/btnEdit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginTop="12dp"
+                android:text="eDITAR"
+                app:layout_constraintLeft_toRightOf="@+id/btnVolver"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </android.support.constraint.ConstraintLayout>
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>
